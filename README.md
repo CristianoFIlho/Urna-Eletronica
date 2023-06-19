@@ -27,7 +27,7 @@ Este é um projeto de uma urna eletrônica desenvolvida em JavaScript, CSS e HTM
 2. Navegue até o diretório do projeto:
 
    ```
-   cd urna-eletronica
+   cd Urna-Eletronica
    ```
 
 3. Abra o arquivo `index.html` em um navegador web:
