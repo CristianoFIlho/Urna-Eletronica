@@ -21,7 +21,7 @@ Este é um projeto de uma urna eletrônica desenvolvida em JavaScript, CSS e HTM
 1. Clone o repositório para o seu computador:
 
    ```
-   git clone https://github.com/seu-usuario/urna-eletronica.git
+   git clone https://github.com/CristianoFIlho/Urna-Eletronica
    ```
 
 2. Navegue até o diretório do projeto:
