@@ -1,168 +1,143 @@
-  @keyframes pisca {
-     0%  {opacity: 0.2;}
-     50% { opacity: 1; }
-     100% {opacity:0.2;}
-  }
-
-  body{
-
-	margin:0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: Arial, Helvetica, sans-serif;
-
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.urna{
-	background-color:#0B0B3B;
-	padding: 30px;
-	display: flex;
-
+/* Estilos da urna eletrônica */
+.urna {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .tela {
-	width: 500px;
-	height: 320px;
-	background-color: #F7D358;
-	border: 1px solid #000;
-	display: flex;
-	flex-direction: column;
-  
+  background-color: #f2f2f2;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 400px;
 }
 
-.teclado {
-	margin-left: 30px;
-	background-color: #403A3A;
-    
+.conteudo-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
-.teclado--linha {
-	display:flex;
-	justify-content: center;
-	align-items: flex-end;
-}
-.teclado--botao {
-	width: 70px;
-	height:40px;
-	background-color: #000;
-	color: #FFF;
-	font-size: 25px;
-	display: flex;
-	justify-content:center;
-	align-items: center;
-	margin: 10px;
-	cursor: pointer;
-	box-shadow: 3px 3px 0px #555;
-
+.conteudo-1-left {
+  text-align: left;
 }
 
-.botao--branco{
-	background-color: #FFF;
-	color:#000;
-	font-size: 15px;
+.titulo-1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.botao--corrige {
-	background-color: #F09046;
-	color:#000;
-	font-size: 15px;
+.titulo-2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.botao--confirma{
-	background-color: #48C079;
-	color:#000;
-	font-size: 15px;
-	width: 90px;
-	height: 50px;
-
-}
-.d-1{
-	flex:1;
-	display:flex;
+.campo-votacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin-bottom: 10px;
 }
 
-.d-1-left {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	padding-left: 15px;
-
-}
-.d-1-1 {
-	height: 50px;
-	display:flex;
-	align-items: center;
-
-}
-.d-1-2 {
-	height: 50x;
-	display: flex;
-	align-items: center;
-
-}
-.d-1-3 {
-	height: 50px;
-}
-
-.numero{
-	display: inline-block;
-	width: 30px;
-	height: 40px;
-	border: 1px solid #000;
-	text-align: center;
-	line-height: 40px;
-	font-size: 25px;
-
+.numero {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  height: 40px;
+  width: 30px;
+  margin-right: 5px;
 }
 
 .pisca {
-	animation-name: pisca;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-
+  animation: blink 1s infinite;
 }
 
-.d-1-4 {
-	flex: 1;
-	line-height: 30px;
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: #ccc;
+  }
 }
 
-.d-1-right{
-	width: 150px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+.descricao {
+  font-size: 14px;
 }
 
-.d-1-image {
-	border:1px solid #000;
-	background-color: #000;
-	text-align: center;
-	font-size: 14px;
-
-}
-.d-1-image img {
-	width: 100%;
-}
-.d-2{
-	height:100px;
-	font-size: 14px;
-	border-top: 2px solid #000;
-	padding-left: 20px;
-
-
-}
-.aviso--grande {
-	font-size: 30px;
-	font-weight: bold;
+.conteudo-1-right {
+  text-align: right;
 }
 
-.aviso--gigante{
-	font-size: 50px;
-	font-weight: bold;
-	flex: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.imagem-artista img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.conteudo-2 {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.teclado {
+  margin-top: 30px;
+}
+
+.linha {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.botao {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  margin: 0 5px;
+  padding: 0;
+  width: 40px;
+}
+
+.botao-branco {
+  background-color: #ccc;
+  color: black;
+}
+
+.botao-corrige {
+  background-color: #ff0000;
+}
+
+.botao-confirma {
+  background-color: #0000ff;
+}
+
+/* Responsividade */
+@media screen and (max-width: 480px) {
+  .tela {
+    width: 90%;
+  }
 }
