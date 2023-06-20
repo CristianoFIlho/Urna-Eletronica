@@ -6,32 +6,32 @@ let etapas = [
       {
         numero: '01',
         nome: 'Michael Jackson',
-        foto: [{ url: 'IveteSangalo.png', legenda: 'Cantor(a)' }]
+        foto: [{ url: 'MichaelJackson.webp', legenda: 'Michael Jackson' }]
       },
       {
         numero: '02',
         nome: 'Elvis Presley',
-        foto: [{ url: 'GilbertoGil.png', legenda: 'Cantor(a)' }]
+        foto: [{ url: 'ElvisPresley.webp', legenda: 'Elvis Presley' }]
       },
       {
         numero: '03',
         nome: 'Freddie Mercury',
-        foto: [{ url: 'LeoSantana.png', legenda: 'Cantor(a)' }]
+        foto: [{ url: 'FreddieMercury.webp', legenda: 'Freddie Mercury' }]
       },
       {
         numero: '04',
         nome: 'Whitney Houston',
-        foto: [{ url: 'Saulo.png', legenda: 'Cantor(a)' }]
+        foto: [{ url: 'WhitneyHouston.webp', legenda: 'Whitney Houston' }]
       },
       {
         numero: '05',
         nome: 'Aretha Franklin',
-        foto: [{ url: 'Caetano.png', legenda: 'Cantor(a)' }]
+        foto: [{ url: 'ArethaFranklin.webp', legenda: 'Aretha Franklin' }]
       },
       {
         numero: '06',
         nome: 'Bob Marley',
-        foto: [{ url: 'GalCosta.png', legenda: 'Cantor(a)' }]
+        foto: [{ url: 'BobMarley.webp', legenda: 'Bob Marley' }]
       }
     ]
   }
