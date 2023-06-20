@@ -6,7 +6,7 @@ let lateral = document.querySelector ('.d-1-right');
 let numeros= document.querySelector ('.d-1-3');
 
 let etapaAtual= 0;
-let numero = ''; // variável que salva os números
+let numero = ''; 
 let votoBranco = false; // preencher
 let votos = [];
 
@@ -19,7 +19,7 @@ function comecarEtapa(){
 	   numero = '';
 	let votoBranco = false;
 
-	for (let i=0;i <etapa.numeros; i++){ //no fim desse loop terá 2 elementos de numero html
+	for (let i=0;i <etapa.numeros; i++){ 
 		if (i===0){
 			numeroHtml += '<div class = "numero pisca"></div>'; // coloca o piscar no próximo número
 		} else {
@@ -38,9 +38,9 @@ function comecarEtapa(){
 
 function atualizaInterface (){
 	let etapa = etapas[etapaAtual];
-	// verificar se o número digitado corresponde a algum candidato
-	let candidato = etapa.candidatos.filter((item)=>{ // recebe os candidatos
-		if(item.numero === numero){ //
+	
+	let candidato = etapa.candidatos.filter((item)=>{ 
+		if(item.numero === numero){ 
 			return true;
 		} else {
 			return false;
@@ -48,7 +48,6 @@ function atualizaInterface (){
 	
 	});
 
-// Se encontrou
 if (candidato.length > 0) {
     candidato = candidato[0];
     seuVotoPara.style.display = "block";
@@ -75,26 +74,25 @@ if (candidato.length > 0) {
 
 
 function clicou(n){
-	// busca o quadrado que está com o pisca ativado, pois é
-	//nele que o número será preenchido
+	
 	let elNumero = document.querySelector('.numero.pisca');
 	if (elNumero !== null){ // se sim ele vai preencher 
 		elNumero.innerHTML = n;
 		numero = `${numero}${n}`;
         
-        //quando preencher um número, remove o pisca
+   
 		elNumero.classList.remove('pisca');
 		
-		// verifica se exite um próximo elemento
-		if (elNumero.nextElementSibling!== null){ //significa que chegou no último item
 		
-		// pega o próximo elemento,entra no class List e adiciona
+		if (elNumero.nextElementSibling!== null){ 
+		
+		
 		elNumero.nextElementSibling.classList.add('pisca');
 		
 
          } else {
          	atualizaInterface();
-         	//verifica o número digitado, se tem algum elemento com esse número,pega as informações e mostra na tela
+         	
 
          }
 
