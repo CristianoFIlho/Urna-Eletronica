@@ -10,7 +10,16 @@
   }
 }
 
+img {
+  max-width: 50%;
+  height: auto;
+}
+
 img[src$=".webp"] {
+  object-fit: contain;
+}
+
+img[src$=".png"] {
   object-fit: contain;
 }
 
