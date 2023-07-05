@@ -13,6 +13,7 @@
 img {
   max-width: 50%;
   height: auto;
+  object-fit: cover;
 }
 
 img[src$=".webp"] {
